@@ -11,7 +11,7 @@ The needed environment is in requirenments.txt
 
 
 ## parameters description
-the parameter description is detailed in main.py
+the parameter description is stated in main.py
 
 ## conduct the experiments
 sh run.sh
