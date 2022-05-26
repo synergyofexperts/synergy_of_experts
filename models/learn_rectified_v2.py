@@ -212,7 +212,7 @@ class Learning(object):
 
 
         elif self.args.attack_type == "black_box":
-            self.args.black_datafolder = "/home/cuisen/adv_train/DVERGE-main/data/transfer_adv_examples" 
+            self.args.black_datafolder = "" 
             if self.args.black_mode_clean:
                 self.args.black_datafolder = os.path.join(self.args.black_datafolder, "clean")
             else:
@@ -314,7 +314,6 @@ class Learning(object):
         ini_train_type = ""
         ini_train_type = self.args.train_type
         epoch_iter = self.get_epoch_iterator()
-        # self.load("/home/cuisen/adv_train/outputs/adver_10-21-NonFlip-big-aux/2021-10-22_16-14-35-bksAzMwa/model_saved/200")
         for epoch in epoch_iter:
             self.pickle_record["train"][str(epoch)] = {}
 

@@ -193,7 +193,7 @@ def white_box(model, args, device, logger):
 def black_box(model, args, device, logger):
     adversary = AutoAttack(model, norm = "Linf", eps = args.attack_eps, version = 'standard', device = device, verbose= False)
     if args.subset_num:
-        with open("/home/cuisen/adv_train/coll-defender/subset_idx.json", "r") as f:
+        with open("subset_idx.json", "r") as f:
             subset_idx_ori = json.load(f)
             # subset_idx = []
             # for i in subset_idx_ori:
