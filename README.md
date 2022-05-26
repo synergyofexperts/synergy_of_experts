@@ -1,4 +1,4 @@
-# the Implementation of Decentralized Federated Learning under Selective Partial Sharing
+# the Implementation of Synergy-of-Experts: Collaborate to Improve Adversarial Robustness 
 
 ## the environment
 The needed environment is in requirenments.txt
